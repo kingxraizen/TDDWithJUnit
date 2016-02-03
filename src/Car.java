@@ -44,6 +44,15 @@ public class Car {
 		}
 	}
 	
+	public void decelerate(int amount){
+		int limit = speed;
+		if(amount >= limit){
+			speed = limit;
+		}else{
+			speed-= amount;
+		}
+	}
+	
 	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
