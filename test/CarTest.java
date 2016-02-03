@@ -27,7 +27,7 @@ public class CarTest {
 	
 	@Test 
 	public void canDoToString(){
-		Car car1 = new Car("Red", 100);
+		String car1 = "Color: Red, Speed: 0";
 		assertThat(car1.toString(), is("Color: Red, Speed: 0"));
 	}
 
